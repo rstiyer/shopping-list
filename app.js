@@ -10,5 +10,6 @@ $(document).ready(function() {
 		event.preventDefault();
 		$('li:last-child').clone().insertAfter('li:last-child');
       	$('li:last-child .shopping-item').text($('#shopping-list-entry').val());
+      	$(this)[0].reset();
 	});
 });
